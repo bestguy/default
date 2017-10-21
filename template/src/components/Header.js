@@ -1,17 +1,23 @@
 import React from 'react';
+import { Nav, NavItem } from 'reactstrap';
 import { Link } from 'preact-router/match';
 
-export default class Header extends React.Component {
-  render() {
-    return (
-      <header>
-        <h1>Preact App</h1>
-        <nav>
-          <Link activeClassName="active" href="/">Home</Link>
-          <Link activeClassName="active" href="/profile">Me</Link>
-          <Link activeClassName="active" href="/profile/john">John</Link>
-        </nav>
-      </header>
-    );
-  }
-}
+export default () => (
+  <Nav tabs>
+    <NavItem>
+      <Link activeClassName="active" className="nav-link" href="/">
+        Home
+      </Link>
+    </NavItem>
+    <NavItem>
+      <Link activeClassName="active" className="nav-link" href="/profile">
+        Me
+      </Link>
+    </NavItem>
+    <NavItem>
+      <Link activeClassName="active" className="nav-link" href="/profile/john">
+        John
+      </Link>
+    </NavItem>
+  </Nav>
+);

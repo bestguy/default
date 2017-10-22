@@ -2,16 +2,13 @@ import React from 'react';
 import { Container, Nav, NavItem } from 'reactstrap';
 import { Router } from 'preact-router';
 import Header from './Header.js';
-import Home from '../routes/Home.js';
-import Profile from '../routes/Profile.js';
-// import Home from 'async!../routes/home';
-// import Profile from 'async!../routes/profile';
+import Home from './Home.js';
+import Profile from './Profile.js';
+// import Home from 'async!./Home.js';
+// import Profile from 'async!./Profile.js';
 
 export default class App extends React.Component {
-  /**
-   * @param {Object} event The "change" event from [preact-router](http://git.io/preact-router)
-   * @param {string} event.url The newly routed URL
-   */
+
   handleRoute = (e) => {
     this.currentUrl = e.url;
   }

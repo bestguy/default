@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, NavItem } from 'reactstrap';
+import { Container } from 'reactstrap';
 import { Router } from 'preact-router';
 import Header from './Header.js';
 import Home from './Home.js';
@@ -8,7 +8,6 @@ import Profile from './Profile.js';
 // import Profile from 'async!./Profile.js';
 
 export default class App extends React.Component {
-
   handleRoute = (e) => {
     this.currentUrl = e.url;
   }

@@ -1,14 +1,13 @@
-# preact-default-boilerplate
+# preact-mobx
 
 ## Documentation
-- This is the default template for [preact-cli](https://github.com/developit/preact-cli).
-- [For Preact](https://preactjs.com/): General information about how to work with Preact, not specific to this template
+- This is a template for [preact-cli](https://github.com/developit/preact-cli) using MobX
 
 ## Usage
 
 ``` bash
 $ npm install -g preact-cli
-$ preact create default my-project
+$ preact create bestguy/preact-mobx my-project
 $ cd my-project
 $ npm install
 $ npm run dev
